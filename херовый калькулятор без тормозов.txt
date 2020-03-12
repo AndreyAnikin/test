@@ -1,0 +1,31 @@
+import java.io.*;
+
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            System.out.println ( "Введите А");
+            int a = Integer.parseInt(reader.readLine()); //преобразовываем строку в число.
+            System.out.println ( "Введите оператор");
+            String operator = reader.readLine(); //читаем строку с клавиатуры
+            System.out.println ( "Введите B");
+            int b = Integer.parseInt(reader.readLine()); //преобразовываем строку в число.
+            
+            switch (operator) {
+           case  ("+"):
+               System.out.println( a + " "+operator+" " + b +" = " + (a+b));
+               break;
+           case  ("-"):
+               System.out.println( a + " "+operator+" " + b +" = " + (a-b));
+               break;
+            case  ("*"):
+               System.out.println( a + " "+operator+" " + b +" = " + (a*b));
+               break;
+            case  ("/"):
+               System.out.println( a + " "+operator+" " + b +" = " + (a/b));
+               break;
+            case  ("%"):
+               System.out.println( a + " "+operator+" " + b +" = " + (a%b));
+               break;
+            }
+    }
+}
